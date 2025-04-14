@@ -17,7 +17,7 @@ void setup() {
 
 void loop() {
   lcd.clear();                 // Clear the LCD screen
-  lcd.print("Press to Start"); // Display instruction to the player
+  lcd.print("Press to begin trail"); // Display instruction to the player
 
   // Just waiting here until the player presses the button (HIGH to LOW) 
   while (digitalRead(buttonPin) == HIGH) {} // DONT WORRY HOW THIS WORKS NOW
@@ -31,7 +31,7 @@ void loop() {
 
 void reactionGame() {
   lcd.clear();    // Clear the LCD screen
-  lcd.print("Get Ready!"); // Inform the player to get ready
+  lcd.print("Prepare thyself!"); // Inform the player to get ready
 
   // Generate a random delay between 3 to 6 seconds (3000-6000 ms) ...
   // Use the function random(); to help achieve that. Look it up how it works.
@@ -39,7 +39,7 @@ void reactionGame() {
   delay(random(0,6000));//random delay between 3 and 6 seconds
 
   lcd.clear();                 
-  lcd.print("press the button as fast as you can");  // Ask the player to press the button as fast as possible
+  lcd.print("DEPART!!!");  // Ask the player to press the button as fast as possible
 
   unsigned long startTime = millis();  // Record the time right button press
 
